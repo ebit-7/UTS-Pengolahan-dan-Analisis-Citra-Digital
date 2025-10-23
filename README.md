@@ -1,11 +1,11 @@
-## 🌿 UTS Pengolahan dan Analisis Citra Digital  
+## UTS Pengolahan dan Analisis Citra Digital  
 **Klasifikasi Daun Herbal Menggunakan CNN & MobileNetV2 (Transfer Learning)**  
 
 📎 **Repo:** [github.com/ebit-7/UTS-Pengolahan-dan-Analisis-Citra-Digital](https://github.com/ebit-7/UTS-Pengolahan-dan-Analisis-Citra-Digital)
 
 ---
 
-### 📘 Deskripsi  
+### Deskripsi  
 Proyek ini dibuat untuk memenuhi tugas **UTS Pengolahan dan Analisis Citra Digital** dengan tujuan mengklasifikasikan **jenis daun herbal** berdasarkan citra digital.  
 Model yang digunakan:  
 - **CNN (Convolutional Neural Network)** — model dasar.  
@@ -13,7 +13,7 @@ Model yang digunakan:
 
 ---
 
-### ⚙️ Algoritma Baru — *MobileNetV2*  
+### Algoritma Baru — *MobileNetV2*  
 MobileNetV2 digunakan sebagai pengembangan dari CNN dengan memanfaatkan bobot pralatih dari *ImageNet*.  
 Langkah utama:
 - Memuat bobot dasar (`imagenet`) tanpa lapisan akhir.  
@@ -31,7 +31,7 @@ Test Accuracy: 73.33%
 
 ---
 
-### 📊 Perbandingan Model  
+### Perbandingan Model  
 
 | Model | Akurasi Val | Waktu Latih | Kelebihan |
 |:------|:-------------:|:-------------:|:------------|
@@ -40,17 +40,17 @@ Test Accuracy: 73.33%
 
 ---
 
-### 🧩 Teknologi  
+### Teknologi  
 Python • TensorFlow/Keras • NumPy • Matplotlib • OpenCV  
 
 ---
 
-### 👨‍💻 Kontributor  
+### Kontributor  
 **Muhammad Ebit Pangestu**  
 NIM: 220201035 — Teknik Informatika  
 
 ---
 
-### 🚀 Kesimpulan  
+### Kesimpulan  
 Penambahan **MobileNetV2** meningkatkan akurasi dan efisiensi dibanding CNN dasar.  
-Metode ini menunjukkan potensi besar untuk pengembangan sistem **identifikasi daun herbal berbasis AI**. 🌱
+Metode ini menunjukkan potensi besar untuk pengembangan sistem **identifikasi daun herbal berbasis AI**.
