@@ -1,51 +1,25 @@
+## 🌿 UTS Pengolahan dan Analisis Citra Digital  
+**Klasifikasi Daun Herbal Menggunakan CNN dan MobileNetV2 (Transfer Learning)**  
+
+📍 **Repository:** [https://github.com/ebit-7/UTS-Pengolahan-dan-Analisis-Citra-Digital](https://github.com/ebit-7/UTS-Pengolahan-dan-Analisis-Citra-Digital)
 
 ---
 
-## 🧠 Algoritma yang Digunakan
+### 📘 Deskripsi Singkat  
+Proyek ini merupakan tugas **Ujian Tengah Semester (UTS)** mata kuliah *Pengolahan dan Analisis Citra Digital*.  
+Tujuan utama proyek adalah membangun sistem **klasifikasi daun herbal** menggunakan citra digital dengan dua pendekatan:  
 
-1. **CNN (Convolutional Neural Network)** – Model dasar untuk klasifikasi gambar.
-2. **MobileNetV2 (Transfer Learning)** – Model tambahan untuk meningkatkan efisiensi dan akurasi dengan bobot pretrained dari ImageNet.
-
----
-
-## 📊 Hasil dan Evaluasi
-
-| Model | Akurasi Training | Akurasi Validasi |
-|-------|------------------|------------------|
-| CNN Dasar | ~85% | ~80% |
-| MobileNetV2 | ~94% | ~92% |
-
-📈 Model MobileNetV2 memberikan hasil terbaik dengan waktu training lebih cepat dan generalisasi lebih baik terhadap data validasi.
+1. **CNN (Convolutional Neural Network)** — model dasar buatan sendiri.  
+2. **MobileNetV2 (Transfer Learning)** — algoritma baru yang ditambahkan untuk meningkatkan akurasi dan efisiensi.  
 
 ---
 
-## 🧩 Teknologi yang Digunakan
+### 🧠 Algoritma Baru yang Ditambahkan — *MobileNetV2 (Transfer Learning)*  
+Algoritma ini merupakan pengembangan dari model awal (CNN) dengan memanfaatkan arsitektur **MobileNetV2**, yaitu model ringan yang telah dilatih pada dataset besar (*ImageNet*).  
 
-- Python 🐍  
-- TensorFlow & Keras  
-- OpenCV  
-- NumPy & Matplotlib  
-- Google Colab  
+Langkah yang dilakukan:  
+- Mengimpor bobot pralatih (`imagenet`) tanpa lapisan akhir.  
+- Menambahkan lapisan klasifikasi sesuai jumlah kelas dataset (3 kelas).  
+- Melatih ulang hanya lapisan atas agar efisien dan cepat konvergen.  
 
----
-
-## 🔗 Repository GitHub
-
-Kamu bisa melihat kode lengkap dan menjalankan proyek ini melalui link berikut:  
-👉 **[UTS-Pengolahan-dan-Analisis-Citra-Digital (GitHub)](https://github.com/ebit-7/UTS-Pengolahan-dan-Analisis-Citra-Digital)**
-
----
-
-## 👨‍💻 Pengembang
-
-**Nama:** Muhammad Ebit Pangestu  
-**NIM:** 220201035  
-**Mata Kuliah:** Pengolahan dan Analisis Citra Digital  
-**Dosen Pengampu:** *(isi jika ingin ditampilkan)*  
-
----
-
-> 📘 *Proyek ini dibuat sebagai bentuk implementasi konsep dasar pengolahan citra digital dan penerapan model deep learning untuk klasifikasi gambar daun herbal.*
-
----
-
+📊 **Hasil Training (MobileNetV2):**
